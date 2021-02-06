@@ -19,6 +19,7 @@ window._CCSettings = {
       "8": ["music/合成.mp3", 4],
       "9": ["music/2.mp3", 4],
       "10": ["music/1.mp3", 4],
+	  "21": ["music/你耍赖.mp3", 4],
       "12": ["panel/GameOverLayer.prefab", 5],
       e7ME0lTvlNb4HX93TA0F1d: ["default_btn_pressed", 0, 1],
       "41eopZwPxHZ4viv1Eku0uN": ["panel/LinkIconSpr.prefab", 5]
