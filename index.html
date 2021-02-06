@@ -96,6 +96,8 @@
         <img src="res/loading.gif" width="7%" height="7%" />
     </div>
 
+	  
+	<audio id="music" src="res/music/nishualai.mp3" loop autoplay></audio>  
 
     <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
     <script type="text/javascript" src="ads.js"></script>
@@ -157,6 +159,9 @@
         };
         window.onload = function() {
             document.getElementById("block-Box").style.display = "none";
+			//打开页面时无音乐
+			var audio = document.getElementById('music');
+                audio.pause();
         }
 
         function updateLabView(t) {

@@ -237,6 +237,12 @@ window.boot = function() {
     cc.game.run(option, onStart);
 };
 
+function playy(){
+	var audio = document.getElementById('music');
+	if (audio.paused) {
+        audio.play();
+}
+
 // main.js is qqplay and jsb platform entry file, so we must leave platform init code here
 if (false) {
     BK.Script.loadlib('GameRes://src/settings.js');
