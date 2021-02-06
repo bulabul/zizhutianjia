@@ -240,7 +240,7 @@ window.boot = function() {
 function playy(){
 	var audio = document.getElementById('music');
 	if (audio.paused) {
-        audio.play();
+	audio.play();}
 }
 
 // main.js is qqplay and jsb platform entry file, so we must leave platform init code here
