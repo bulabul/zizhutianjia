@@ -1919,7 +1919,11 @@ window.__require = function e(t, n, o) {
       SetScore: function (e) {
         o.gameScore = e
       },
+	  //重新开始游戏
       RestartGame: function () {
+		var mp="res/music/zailaiyici.mp3";
+			      var mp = new Audio(mp);
+				  mp.play();
         o.GAME_OVER_BOOL = !0, o.gameScore = 0, o.publicGameBool || adBreak({
           type: "next",
           name: "restart-game"
@@ -2004,7 +2008,7 @@ window.__require = function e(t, n, o) {
               gameFunction.default.Instance.targetFruit.destroy();
               gameFunction.default.Instance.targetFruit = null;
               gameFunction.default.Instance.createOneFruit(Math.floor(Math.random()*6));
-			  var mp="res/music/nishualai.mp3";
+			  var mp="res/music/bugongping.mp3";
 			      var mp = new Audio(mp);
 				  mp.play();
             }
