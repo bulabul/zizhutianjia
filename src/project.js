@@ -11,6 +11,11 @@ if (selectModal) {
   extraScore = parseInt(extraScoreStr)
 }
 
+var mp="res/music/zailaiyici.mp3";
+var mp = new Audio(mp);
+var dp="res/music/bugongping.mp3";
+var dp = new Audio(dp);
+				  
 
 window.__require = function e(t, n, o) {
   function c(i, r) {
@@ -1921,9 +1926,7 @@ window.__require = function e(t, n, o) {
       },
 	  //重新开始游戏
       RestartGame: function () {
-		var mp="res/music/zailaiyici.mp3";
-			      var mp = new Audio(mp);
-				  mp.play();
+		mp.play();
         o.GAME_OVER_BOOL = !0, o.gameScore = 0, o.publicGameBool || adBreak({
           type: "next",
           name: "restart-game"
@@ -2008,9 +2011,7 @@ window.__require = function e(t, n, o) {
               gameFunction.default.Instance.targetFruit.destroy();
               gameFunction.default.Instance.targetFruit = null;
               gameFunction.default.Instance.createOneFruit(Math.floor(Math.random()*6));
-			  var mp="res/music/bugongping.mp3";
-			      var mp = new Audio(mp);
-				  mp.play();
+			  dp.play();
             }
             return;
           }
