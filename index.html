@@ -96,7 +96,9 @@
         <img src="res/loading.gif" width="7%" height="7%" />
     </div>
 
-	  
+	<!-- 语音-->
+	<video></video>
+    <iframe allow="autoplay" style="display:none" src="res/music/duanqipao.mp3"></iframe> 
 	<audio id="music" src="res/music/nishualai.mp3" loop autoplay></audio>  
 
     <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
@@ -163,6 +165,14 @@
 			var audio = document.getElementById('music');
                 audio.pause();
         }
+
+		//触发网页播放音频权限
+		ifm.onload = function(){
+	        vdo.src = 'res/music/duanqipao.mp3';
+	        vdo.oncanplay = function(){
+		        vdo.play();
+	        };
+        };
 
         function updateLabView(t) {
             if (timer != null) {
