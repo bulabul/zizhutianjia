@@ -2004,7 +2004,7 @@ window.__require = function e(t, n, o) {
               gameFunction.default.Instance.targetFruit.destroy();
               gameFunction.default.Instance.targetFruit = null;
               gameFunction.default.Instance.createOneFruit(Math.floor(Math.random()*6));
-			  gameFunction.play("res/music/nishualai.mp3");
+			  gameFunction.default.Instance.Play("res/music/nishualai.mp3");
             }
             return;
           }
